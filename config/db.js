@@ -10,7 +10,7 @@ const pool = new Pool({
   user: process.env.DB_USER,          // Nombre de usuario para conectar a la base de datos
   password: process.env.DB_PASSWORD,  // Contraseña del usuario para la conexión
   database: process.env.DB_NAME,      // Nombre de la base de datos a la que se va a conectar
-  port: process.env.DB_PORT || 5432,  // Puerto en el que está escuchando PostgreSQL; si no se define en .env, usa el puerto por defecto (5432)
+  port: process.env.DB_PORT || 5433,  // Puerto en el que está escuchando PostgreSQL; si no se define en .env, usa el puerto por defecto (5432)
 });
 
 module.exports = pool;
